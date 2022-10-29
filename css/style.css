@@ -19,7 +19,7 @@ body {
   font-family: opensans, sans-serif;
 }
 
-/*body:after {
+body:after {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@ body {
   height: 3508px;
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_desktop.jpg?raw=true");
   opacity: 0.2;
-}*/
+}
 
 p {
   margin: 0;
@@ -667,22 +667,26 @@ p {
 .product {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
   padding: 0 23px;
-  
+}
+
+.product_preview {
+
 }
 
 .product_image {
-  width: 300px;
   background-color: #eff6f1;
 }
 
 .product_wrapper {
-  box-sizing: border-box;
-  width: 300px;
-  margin: 0;
+  width: 100%;
+  margin-top: -35px;
+  padding: 30px 20px;
   flex-grow: 1;
-  outline: 3px solid #b59f5b;
-  outline-offset: 25px;
+  border: 3px solid #b59f5b;
 }
 
 .product_name {
@@ -775,7 +779,7 @@ p {
   box-sizing: border-box;
   display: block;
   width: 1200px;
-  margin: 91px auto 70px auto;
+  margin: 61px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -828,7 +832,7 @@ p {
 }
 
 .copyright {
-  margin: 10px auto;
+  margin: 70px auto;
 } 
 
 .copyright_link {

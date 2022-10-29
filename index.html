@@ -53,9 +53,7 @@
             <a class="trand_tag_link" href="#0">interior</a>
           </li>
         </ul>
-        <div class="trand_title">
-          <a href="#0" class="trand_link"><h2 class="trand_name">Сейчас в тренде: сад на подоконнике</h2></a>
-        </div>
+        <a href="#0" class="trand_link"><h2 class="trand_name">Сейчас в тренде: сад на подоконнике</h2></a>
       </div>
     </article>
     <article class="trand_article trand_article_2">
@@ -65,9 +63,7 @@
             <a class="trand_tag_link" href="#0">food</a>
           </li>
         </ul>
-        <div class="trand_title">
-          <a href="#0" class="trand_link"><h2 class="trand_name">Сыры на красивых картинках из интернета: какие они на вкус?</h2></a>
-        </div>
+        <a href="#0" class="trand_link"><h2 class="trand_name">Сыры на красивых картинках из интернета: какие они на вкус?</h2></a>
       </div>
     </article>
     <article class="trand_article trand_article_3">
@@ -80,9 +76,7 @@
             <a class="trand_tag_link" href="#0">travel</a>
           </li>
         </ul>
-        <div class="trand_title">
-          <a href="#0" class="trand_link"><h2 class="trand_name">Собираемся в первый поход в горы</h2></a>
-        </div>
+        <a href="#0" class="trand_link"><h2 class="trand_name">Собираемся в первый поход в горы</h2></a>
       </div>
     </article>
     <article class="trand_article trand_article_4">
@@ -95,9 +89,7 @@
             <a class="trand_tag_link" href="#0">health</a>
           </li>
         </ul>
-        <div class="trand_title">
-          <a href="#0" class="trand_link"><h2 class="trand_name">Сейчас в тренде: сколько витамина C в лимонах?</h2></a>
-        </div>
+        <a href="#0" class="trand_link"><h2 class="trand_name">Сейчас в тренде: сколько витамина C в лимонах?</h2></a>
       </div>
     </article>
   </div>
@@ -377,7 +369,12 @@
   <div class="shop_container">
     <article class="product">
       <div class="product_image_box">
-        <img src="images/shop-item-desk1.jpg" alt="Подушка на диване" class="product_image">
+        <picture class="product_preview">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+          <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+          <img src="images/shop-item-desk1.jpg" alt="Подушка на диване" class="product_image">
+        </picture>
       </div>
       <div class="product_wrapper">
         <h2 class="product_name">Подушки на диван</h2>
@@ -401,7 +398,12 @@
     </article>
     <article class="product">
       <div class="product_image_box">
-        <img src="images/shop-item-desk2.jpg" alt="Кукла «Зайчик»" class="product_image">
+        <picture class="product_preview">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+          <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+          <img src="images/shop-item-desk2.jpg" alt="Кукла «Зайчик»" class="product_image">
+        </picture>
       </div>
       <div class="product_wrapper">
         <h2 class="product_name">Кукла «Зайчик»</h2>
@@ -422,7 +424,12 @@
     </article>
     <article class="product">
       <div class="product_image_box">
-        <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка" class="product_image">
+        <picture class="product_preview">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+          <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+          <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка" class="product_image">
+        </picture>
       </div>
       <div class="product_wrapper">
         <h2 class="product_name">Шестиугольная рамка</h2>
