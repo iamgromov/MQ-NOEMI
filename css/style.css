@@ -19,7 +19,7 @@ body {
   font-family: opensans, sans-serif;
 }
 
-body:after {
+/* body:after {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@ body:after {
   height: 3508px;
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_desktop.jpg?raw=true");
   opacity: 0.2;
-}
+} */
 
 .visually_hidden {
   position: absolute;
@@ -847,7 +847,7 @@ body:after {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
-  body:after {
+/*   body:after {
     content: "";
     position: absolute;
     top: 0;
@@ -858,7 +858,7 @@ body:after {
     height: 5320px;
     background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_tablet.jpg?raw=true");
     opacity: 0.2;
-  }
+  } */
 
   /* HEADER */
   .header {
@@ -1070,12 +1070,13 @@ body:after {
   }
 
   .product {
-    width: 292px;
+    width: 42%;
     margin-top: 25px;
     padding: 0 23px;
   }
 
   .product_image {
+    width: 100%;
     max-width: 292px;
   }
 
@@ -1094,19 +1095,31 @@ body:after {
   } 
 }
 
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+  .trand_article {
+    min-width: 24%;
+    min-height: 247px;
+  }
+
+  .trand_article:nth-child(n+2) {
+    margin-top: 0;
+    margin-left: 4px;
+  }
+}
+
 @media (max-width: 640px) {
-  body:after {
+/*   body:after {
   content: "";
   position: absolute;
   top: 0;
   left: calc(50% - 180px);
-  z-index: 100;
+  z-index: -100;
   display: block;
   width: 360px;
   height: 7464px;
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_mobile.jpg?raw=true");
   opacity: 0.2;
-  }
+  } */
 
   /* HEADER */
   .header {
@@ -1156,7 +1169,7 @@ body:after {
     margin-top: -2px;
     margin-left: -11px;
     background-color: #ffffff;
-    }
+  }
 
   .menu_button_label:before,
   .menu_button_label:after {
@@ -1212,7 +1225,7 @@ body:after {
   .trand_text {
     margin: 15px;
     padding: 25px 20px 10px 20px;
-}
+  }
 
   .trand_tag_link {
     font-size: 14px;
@@ -1318,7 +1331,7 @@ body:after {
 
   /* SHOP */
   .shop_block {
-    max-width: 1199px;
+    max-width: 640px;
     margin: 30px auto;
     padding: 0 15px;
   }
@@ -1332,13 +1345,14 @@ body:after {
   }
 
   .product {
-    width: 292px;
+    width: 100%;
     margin-top: 25px;
     padding: 0 23px;
   }
 
   .product_image {
-    max-width: 292px;
+    width: 100%;
+    max-width: 285px;
   }
 
   .product_name {
@@ -1353,5 +1367,25 @@ body:after {
 
   .copyright {
     margin: 45px auto;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trand_article {
+    min-width: 49%;
+    min-height: 231px;
+  }
+
+  .trand_article:nth-child(n+2) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .trand_article:nth-child(2n) {
+    margin-left: 4px;
+  }
+
+  .trand_article:nth-child(n+3) {
+    margin-top: 4px;
   }
 }
