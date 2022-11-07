@@ -872,6 +872,10 @@ body {
   overflow: hidden;
 }
 
+.popup_hidden {
+  /*display: none;*/
+}
+
 .popup_container {
   position: relative;
   box-sizing: border-box;
