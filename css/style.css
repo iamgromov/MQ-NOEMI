@@ -873,7 +873,7 @@ body {
 }
 
 .popup_hidden {
-  /*display: none;*/
+  display: none;
 }
 
 .popup_container {
