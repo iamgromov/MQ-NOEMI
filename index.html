@@ -488,5 +488,50 @@
     </a>
   </div>
 </footer>
+
+<!-- POPUP -->
+<div > <!-- для атрибута hidden -->
+  <div class="popup">
+    <div class="popup_container">
+      <h2 class="popup_title">Ваш фидбек</h2>
+      <div class="select_form">
+        <label class="select_label">
+          <span class="group_label">Как часто вы заходите на сайт?</span>
+          <select class="select">
+            <option value="Почти каждый день" selected>Почти каждый день</option>
+            <option value="Раз в несколько дней">Раз в несколько дней</option>
+            <option value="Раз в несколько недель">Раз в несколько недель</option>
+            <option value="Несколько раз в год">Несколько раз в год</option>
+          </select>
+        </label>
+      </div>
+      <div class="radio_form">
+        <span class="group_label">Вы подписаны на e-mail рассылку?</span>
+        <div class="radio_group">
+          <div class="radio">
+            <input type="radio" id="choiceYes" name="choice" value="yes" class="radio_input" checked>
+            <label for="choiceYes" class="radio_label">Да</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="choiceNo" name="choice" value="no" class="radio_input">
+            <label for="choiceNo" class="radio_label">Нет</label>
+          </div>
+        </div>
+      </div>
+      <div class="wish_form">
+        <label class="wish_label">
+          <span class="group_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="wish_textarea" placeholder="Может, больше рецептов?" required></textarea>
+        </label>
+      </div>
+      <div class="popup_form_group">
+        <button type="submit" class="submit_button" alt="Кнопка отправить">
+          <span class="submit_title">Отправить</span>
+        </button>
+      </div>
+      <button class="popup_close" type="button"><span class="visually_hidden">Закрыть окно</span></button>
+    </div>
+  </div>  
+</div>
 </body>
 </html>

@@ -19,7 +19,7 @@ body {
   font-family: opensans, sans-serif;
 }
 
-/* body:after {
+/*body:after {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@ body {
   height: 3508px;
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_desktop.jpg?raw=true");
   opacity: 0.2;
-} */
+}*/
 
 .visually_hidden {
   position: absolute;
@@ -846,8 +846,220 @@ body {
   color: #999999;
 }
 
+/* POPUP */
+/*body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 830px);
+  z-index: 100;
+  display: block;
+  width: 1660px;
+  height: 1000px;
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_desktop_popup.jpg?raw=true");
+  opacity: 0.2;
+} */
+
+.popup {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.popup_container {
+  position: relative;
+  box-sizing: border-box;
+  width: 390px;
+  padding: 45px 30px;
+  background-color: #ffffff;
+}
+
+.popup_title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: opensans, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.popup_title:after {
+  content: '';
+  display:block;
+  width: 66px;
+  height: 3px;
+  opacity: 0.4;
+  background-color: #b59f5b;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.select_form {
+  margin-top: 20px;
+}
+
+.group_label {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: opensans, sans-serif;
+  color: #000000;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 17px 18px;
+  border: none;
+  background-color: #f4f7f6;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: opensans, sans-serif;
+  color: #000000;
+  opacity: 0.54;
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+  outline-color: #b59f5b;
+}
+
+.radio_form {
+  margin-top: 25px;
+}
+
+.radio_group {
+  display: flex;
+  margin-top: 2px;
+}
+
+.radio {
+  position: relative;
+  margin-right: 20px;
+}
+
+.radio_input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.radio_label {
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: opensans, sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+
+.radio_label:before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url(../svg/form-empty-circle.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.radio_input:checked + .radio_label:before {
+  background-image: url(../svg/form-circle.svg);
+}
+
+.wish_form {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.wish_textarea {
+  box-sizing: border-box;
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 130px;
+  margin: 10px 0 0 0;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f4f7f6;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: opensans, sans-serif;
+  color: #000000;
+  opacity: 0.54;
+  cursor: pointer;
+}
+
+.wish_textarea:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+  outline-color: #b59f5b;
+}
+
+.submit_button {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: opensans, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: #323232;
+}
+
+.submit_title {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: opensans, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.popup_close {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -25px;
+  right: -2px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../svg/form-x.svg);
+  cursor: pointer;
+}
+
+/* TABLET */
 @media (min-width: 641px) and (max-width: 1199px) {
-/*   body:after {
+  /*body:after {
     content: "";
     position: absolute;
     top: 0;
@@ -858,9 +1070,9 @@ body {
     height: 5320px;
     background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_tablet.jpg?raw=true");
     opacity: 0.2;
-  } */
+  }*/
 
-  /* HEADER */
+  /* HEADER TABLET */
   .header {
     min-width: 100%;
     padding: 43px 0 114px 0;
@@ -930,7 +1142,7 @@ body {
     line-height: 1.375;
   }
 
-  /* TRANDS */
+  /* TRANDS TABLET */
   .trand_block {
     margin-top: 43px;
   }
@@ -969,7 +1181,7 @@ body {
     font-size: 17px;
   }
 
-  /* MAIN & ASIDE*/
+  /* MAIN & ASIDE TABLET */
   .page_container {
     box-sizing: border-box;
     display: flex;
@@ -979,7 +1191,7 @@ body {
     padding: 0 35px;
   }
 
-  /* MAIN */
+  /* MAIN TABLET */
   .article  {
     flex-direction: column;
   }
@@ -1028,7 +1240,7 @@ body {
     margin-top: 25px;
   }
 
-  /* ASIDE */
+  /* ASIDE TABLET */
   .aside_block {
     min-width: 270px;
     margin-left: 35px;
@@ -1054,7 +1266,7 @@ body {
     margin-top: 12px;
   }
 
-  /* SHOP */
+  /* SHOP TABLET */
   .shop_block {
     max-width: 1199px;
     margin: 35px auto;
@@ -1084,7 +1296,7 @@ body {
     font-size: 17px;
   }
 
-  /* FOOTER */
+  /* FOOTER TABLET */
   .footer_container {
     margin: 45px auto;
     padding: 0 35px;
@@ -1093,8 +1305,58 @@ body {
   .copyright {
     margin: 30px auto;
   } 
+
+  /* POPUP TABLET */
+  /*body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 384px);
+    z-index: 100;
+    display: block;
+    width: 768px;
+    height: 990px;
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_tablet_popup.jpg?raw=true");
+    opacity: 0.2;
+  }*/
+
+  .popup_title {
+    font-size: 18px;
+  }
+
+  .radio_group {
+    margin-top: 8px;
+  }
+
+  .radio {
+    margin-right: 35px;
+  }
+
+  .radio_label {
+    padding-left: 30px;
+  }
+
+  .radio_label:before {
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+  }
+
+  .popup_close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -37px;
+    right: 2px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../svg/form-x.svg);
+    cursor: pointer;
+  }
 }
 
+/* TABLET LANDSCAPE */
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   .trand_article {
     min-width: 24%;
@@ -1107,21 +1369,22 @@ body {
   }
 }
 
+/* MOBILE */
 @media (max-width: 640px) {
-/*   body:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: calc(50% - 180px);
-  z-index: -100;
-  display: block;
-  width: 360px;
-  height: 7464px;
-  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_mobile.jpg?raw=true");
-  opacity: 0.2;
-  } */
+  /*body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 180px);
+    z-index: -100;
+    display: block;
+    width: 360px;
+    height: 7464px;
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_mobile.jpg?raw=true");
+    opacity: 0.2;
+  }*/
 
-  /* HEADER */
+  /* HEADER MOBILE */
   .header {
     min-width: 100%;
     padding: 30px 0 210px 0;
@@ -1198,7 +1461,7 @@ body {
     line-height: 1.384;
   }
 
-  /* TRANDS */
+  /* TRANDS MOBILE */
   .trand_block {
     margin-top: 40px;
   }
@@ -1235,14 +1498,14 @@ body {
     font-size: 16px;
   }
 
-  /* MAIN & ASIDE*/
+  /* MAIN & ASIDE MOBILE */
   .page_container {
     flex-direction: column;
     max-width: 640px;
     margin: 45px auto 0 auto;
   }
 
-  /* MAIN */
+  /* MAIN MOBILE */
   .main_block {
     max-width: 100%;
   }
@@ -1307,7 +1570,7 @@ body {
     padding: 0;
   }
 
-  /* ASIDE */
+  /* ASIDE MOBILE */
   .aside_block {
     margin: 45px 0 0 0;
     width: 100%;
@@ -1329,7 +1592,7 @@ body {
     margin-right: 4px;
   }
 
-  /* SHOP */
+  /* SHOP MOBILE */
   .shop_block {
     max-width: 640px;
     margin: 30px auto;
@@ -1359,7 +1622,7 @@ body {
     font-size: 17px;
   }
 
-  /* FOOTER */
+  /* FOOTER MOBILE */
   .footer_container {
     margin: 30px auto;
     padding: 0 15px;
@@ -1368,8 +1631,58 @@ body {
   .copyright {
     margin: 45px auto;
   }
+
+  /* POPUP MOBILE */
+  /*body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 180px);
+    z-index: 100;
+    display: block;
+    width: 360px;
+    height: 640px;
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/NOEMI_mq_mobile_popup.jpg?raw=true");
+    opacity: 0.2;
+  }*/
+
+  .popup_container {
+    width: 330px;
+    padding: 25px 25px 30px 25px;
+  }
+
+  .popup_title {
+    font-size: 16px;
+  }
+
+  .radio_group {
+    margin-top: 8px;
+  }
+
+  .radio {
+    margin-right: 35px;
+  }
+
+  .radio_label {
+    padding-left: 30px;
+  }
+
+  .radio_label:before {
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+  }
+
+  .popup_close {
+    width: 28px;
+    height: 28px;
+    top: -33px;
+    right: 0;
+  }
 }
 
+/* MOBILE LANDSCAPE */
 @media (max-width: 640px) and (orientation: landscape) {
   .trand_article {
     min-width: 49%;
